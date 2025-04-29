@@ -4,24 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/styles/main.css" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/fb0858d8b6.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Creative.AI /SDR</title>
   </head>
   <body>
-    <div class="wrapper">
+    <div id="home" class="wrapper">
       <div class="bk-color-main">
         <!-- Header -->
         <header class="header">
-          <div class="logo">Creative.AI /SDR</div>
-          <div class="menu">
-            <nav>
+          <div class="logo">Creative.AI <span>/SDR</span></div>
+
+          <div class="backDrop"></div>
+          <i id="bars" class="fa-solid fa-bars"></i>
+
+          <nav id="menu" class="menu">
+            <div class="nav-top">
+              <i id="close" class="fa-solid fa-xmark"></i>
               <ul>
-                <li><a href=""> Benefícios </a></li>
-                <li><a href=""> Como um Agente SDR funciona? </a></li>
-                <li><a href=""> Cotato </a></li>
+                <li><a href="#services">Benefícios</a></li>
+                <li><a href="#cases">Como um Agente SDR funciona?</a></li>
               </ul>
-            </nav>
-          </div>
+              <div class="btn-nav">
+                <a href="#contato">Contato</a>
+              </div>
+            </div>
+            <div class="nav-bottom">
+              <div class="logo">Creative.AI <span>/SDR</span></div>
+              <div><a href="/termos.html">Termos de Privacidade</a></div>
+            </div>
+          </nav>
         </header>
+
         <!-- Main -->
         <section class="main">
           <main>
@@ -39,13 +64,15 @@
       </div>
 
       <!-- Beneficios -->
-      <section class="beneficios">
+      <section id="beneficio" class="beneficios">
         <div class="tag-beneficios">Benefícios</div>
         <div class="wrapper-content-beneficio">
           <h2>Colaboradores virtuais, resultados <span> reais</span></h2>
           <div class="wrapper-boxes-beneficio">
             <div class="box-beneficio">
-              <div class="icon-beneficios"></div>
+              <div class="icon-beneficios">
+                <i class="bi bi-bar-chart-line"></i>
+              </div>
               <h3>Escalabilidade Fácil</h3>
               <p>
                 Aumente a capacidade de worker ou recrute novos workers para
@@ -53,7 +80,9 @@
               </p>
             </div>
             <div class="box-beneficio">
-              <div class="icon-beneficios"></div>
+              <div class="icon-beneficios">
+                <i class="bi bi-piggy-bank"></i>
+              </div>
               <h3>Otimização de Custos</h3>
               <p>
                 Maximize seus resultados com eficiência de custos usando nossos
@@ -61,7 +90,9 @@
               </p>
             </div>
             <div class="box-beneficio">
-              <div class="icon-beneficios"></div>
+              <div class="icon-beneficios">
+                <i class="bi bi-clock"></i>
+              </div>
               <h3>24/7 Sem Pausas</h3>
               <p>
                 Sempre disponível, 24 horas por dia, 7 dias por semana, sem
@@ -69,7 +100,9 @@
               </p>
             </div>
             <div class="box-beneficio">
-              <div class="icon-beneficios"></div>
+              <div class="icon-beneficios">
+                <i class="bi bi-toggles"></i>
+              </div>
               <h3>Gerenciamento Simplificado</h3>
               <p>
                 Facilite o gerenciamento através de parametrizações intuitivas e
@@ -79,8 +112,9 @@
           </div>
         </div>
       </section>
+
       <!-- Passo a Passo -->
-      <section class="passos">
+      <section id="passo" class="passos">
         <div class="tag-passos">passo a passo</div>
         <div class="wrapper-content-passos">
           <h2>
@@ -125,13 +159,249 @@
           </div>
         </div>
       </section>
+
+      <!-- Canais de Comunicação -->
+      <section id="integracao" class="canal">
+        <div class="tag-canal">Canais de integrações</div>
+        <div class="wrapper-content-canal">
+          <div class="wrapper-content">
+            <h2>Seu Agente <span>Creative.AI</span> trabalha sem parar</h2>
+            <div class="wrapper-content-box">
+              <div class="wrapper-content-box-card">
+                <div><i class="fas fa-arrow-right"></i>Omnichannel</div>
+                <p>Presente em múltiplos canais de comunicação.</p>
+              </div>
+              <div class="wrapper-content-box-card">
+                <div>
+                  <i class="fas fa-arrow-right"></i>Integrações Abrangentes
+                </div>
+                <p>Integrações com e-mail, site, CRM e WhatsApp.</p>
+              </div>
+            </div>
+          </div>
+          <div class="img-canal">
+            <!-- <img src="/src/img/channels.png" alt="" /> -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Comparação -->
+      <section id="comparacao" class="comparacao">
+        <div class="tag-comparacao">
+          Pré-vendedores em IA especializados no seu comercial
+        </div>
+        <div class="wrapper-content-comparacao">
+          <h2>
+            Creative.AI SDR
+            <span> x </span>
+            SDR Humano
+          </h2>
+          <div class="wrapper-boxes-comparacao-content">
+            <div class="boxes-comparacao">
+              <div>COMPARAÇÃO</div>
+              <div>Leads Qualificados por Mês</div>
+              <div>Remuneração Média SDR no Brasil</div>
+              <div>Performance</div>
+            </div>
+            <div class="boxes-comparacao">
+              <div class="boxes-comparacao-bk">Creative.AI</div>
+              <div class="boxes-comparacao-bk">Ilimitado</div>
+              <div class="boxes-comparacao-bk">Mais de 60% de economia</div>
+              <div class="boxes-comparacao-bk">
+                Qualifica leads ilimitados, descobre novos, sugere bases para
+                abordagem, envia oportunidades para agenda de vendedores,
+                alimenta o CRM e atua com alto nível de personalização.
+              </div>
+            </div>
+            <div class="boxes-comparacao">
+              <div>SDR Humano</div>
+              <div>
+                308 leads
+                <span class="boxes-performace">Em alta performance</span>
+              </div>
+              <div>R$ 5.480,00 com encargos</div>
+              <div>
+                Pode qualificar até 308 leads por mês (10 por dia em um mês com
+                22 dias úteis), se não faltar e mantiver a constância.
+                <span class="boxes-performace">Em alta performance</span>
+              </div>
+            </div>
+          </div>
+          <div class="boxes-comparacao-resp">
+            <div class="boxes-comparacao">
+              <div class="sdr-tittle">SDR Humano</div>
+              <div class="boxes-comparacao-cnt">
+                <div>
+                  <p>Leads qualificados por mês</p>
+                  <h3>308</h3>
+                  <span class="boxes-performace">Em alta performance</span>
+                </div>
+              </div>
+              <div class="boxes-comparacao-cnt">
+                <div>
+                  <p>Remuneração Média SDR no Brasil</p>
+                  <h3>R$ 5.480,00 com encargos</h3>
+                </div>
+              </div>
+              <div class="boxes-comparacao-cnt">
+                <div>
+                  <p>Performance</p>
+                  <h3>
+                    Pode qualificar até 308 leads por mês (10 por dia em um mês
+                    com 22 dias úteis), se não faltar e mantiver a constância.
+                  </h3>
+                  <span class="boxes-performace">Em alta performance</span>
+                </div>
+              </div>
+            </div>
+            <div class="boxes-comparacao bk-cnt">
+              <div class="sdr-tittle">Creative.AI</div>
+              <div class="boxes-comparacao-cnt">
+                <div>
+                  <p>Leads qualificados por mês</p>
+                  <h3>Ilimitado</h3>
+                </div>
+              </div>
+              <div class="boxes-comparacao-cnt">
+                <div>
+                  <p>Remuneração Média SDR no Brasil</p>
+                  <h3>Mais de 60% de economia</h3>
+                </div>
+              </div>
+              <div class="boxes-comparacao-cnt">
+                <div>
+                  <p>Performance</p>
+                  <h3>
+                    Qualifica leads ilimitados, descobre novos, sugere bases
+                    para abordagem, envia oportunidades para agenda de
+                    vendedores, alimenta o CRM e atua com alto nível de
+                    personalização.
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Call Action -->
+      <div class="call-action">
+        <div class="call">
+          <h3>Transforme conversas em clientes</h3>
+          <div class="btn-call">Fale com Especialista</div>
+        </div>
+      </div>
+
+      <!-- Duvidas -->
+      <div class="duvidas">
+        <h2>Dúvidas Comuns</h2>
+        <div class="wrapper-duvidas">
+          <h4 class="pergunta">O que é um Agente de IA SDR?</h4>
+          <p class="resposta">
+            É uma inteligência artificial treinada para atuar como um SDR (Sales
+            Development Representative), automatizando todo o processo de
+            prospecção e qualificação de leads. Esse agente identifica contexo,
+            argumenta com potenciais clientes, faz perguntas estratégicas e
+            segmenta os leads com base em critérios pré-definidos, garantindo
+            que apenas os mais qualificados cheguem ao time de vendas.
+          </p>
+        </div>
+        <div class="wrapper-duvidas">
+          <h4 class="pergunta">
+            Os Agentes SDR da Creative.AI pode se integrar ao meu CRM?
+          </h4>
+          <p class="resposta">
+            Sim! Nossas soluções são compatíveis com os principais CRMs do
+            mercado, como HubSpot, Pipedrive, ClickUp, Salesforce e Trello,
+            permitindo que todos os dados de leads e interações sejam
+            registrados e atualizados automaticamente, em tempo real.
+          </p>
+        </div>
+        <div class="wrapper-duvidas">
+          <h4 class="pergunta">A abordagem da Creative.AI parece robótica?</h4>
+          <p class="resposta">
+            De forma alguma. Nosso agente de IA SDR utiliza tecnologias
+            avançadas de Processamento de Linguagem Natural (PLN) para criar
+            conversas naturais, fluidas e personalizadas. Ele se adapta ao tom,
+            ao contexto e ao comportamento de cada lead, proporcionando uma
+            experiência muito próxima à de uma interação humana.
+          </p>
+        </div>
+        <div class="wrapper-duvidas">
+          <h4 class="pergunta">Ter e utilizar um Agente SDR é seguro?</h4>
+          <p class="resposta">
+            Sim. Criar e treinar a seu Agente SDR na Creative.AI é muito seguro.
+            Somente você tem acesso aos seus dados que são salvos em ambientes
+            de nuvem com regras de segurança máxima. Além disso, seu chat roda
+            somente onde você autorizar e a sua IA dá respostas coerentes com os
+            dados que você treinou.
+          </p>
+        </div>
+        <div class="wrapper-duvidas">
+          <h4 class="pergunta">Qual a diferença para o chatGPT?</h4>
+          <p class="resposta">
+            Seu Agente SDR difere do ChatGPT justamente por usar os dados
+            próprios do seu negócio para atender seus clientes em diversos
+            canais e gerar leads e vendas para o seu negócio. <br />
+            <br />
+            Que dados podem ser esses? Descrições dos seus produtos, serviços,
+            dúvidas comuns dos seus clientes, materiais de venda, manuais de
+            atendimento, edições digitalizadas de revistas/livros, normas
+            internas etc. <br />
+            <br />
+            Enquanto o ChatGPT utiliza dados abertos da Internet (que todo mundo
+            tem acesso) e dados de arquivos, a sua IA na Atendente.AI utiliza
+            somente os dados que você quiser e vai gerar somente respostas sobre
+            eles. <br />
+            <br />
+            Além disso, se uAgente SDR pode ser publicada no seu website, no seu
+            WhatsApp, nas suas mídias sociais, no seu e-mail e outros canais de
+            atendimento.
+            <br />
+            <br />
+            Por fim, seu Agente pode ser treinada para gerar leads e vendas para
+            o seu negócio, enquanto o ChatGPT não pode fazer isso.
+          </p>
+        </div>
+      </div>
+
+      <!-- Footer -->
       <footer class="footer">
         <div class="footer-wrapper">
-          <div>
-            <div class="logo">Creative AI /SDR</div>
+          <div class="wrapper-footer-list">
+            <div class="logo-content">
+              <div class="logo">Creative AI <span>/SDR</span></div>
+            </div>
+            <div class="footer-list-cnt">
+              <div class="end">Centro, Araranguá/SC, CEP 88900-019</div>
+              <div class="wrapper-list">
+                <ul>
+                  <li><a href="#home">Pré-vendedor Outbound</a></li>
+                  <li><a href="#home">Pré-vendedor Inbound</a></li>
+                  <li><a href="#home">SAC</a></li>
+                  <li><a href="#home">Follow Up</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#home">Início</a></li>
+                  <li><a href="#beneficio">Benefícios</a></li>
+                  <li><a href="#passo">Passos</a></li>
+                  <li><a href="#integracao">Integrações</a></li>
+                  <li><a href="#comparacao">Comparações</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+            <div>
+              2025 © Creative.AI - SOLUÇÕES INTELIGENTES. Todos direitos
+              reservados
+            </div>
+            <div><a href="/termos.html">Politicas de Privacidade</a></div>
           </div>
         </div>
       </footer>
     </div>
+
+    <script src="/src/js/main.js"></script>
   </body>
 </html>
