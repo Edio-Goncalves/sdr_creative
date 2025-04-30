@@ -59,7 +59,50 @@
               que garantem maior produtividade a um custo reduzido.
             </p>
           </main>
-          <div class="img-form"></div>
+          <div class="hero-form">
+            <div class="form-wrapper">
+              <div class="form-header">
+                <div class="form-tittle">
+                  <p>Fale com um Especialista em SDR!</p>
+                  <p>
+                    Preencha o formulário e nosso consultor entrará em contato
+                    para agendar uma reunião personalizada e entender suas
+                    necessidades.
+                  </p>
+                </div>
+              </div>
+              <form action="/enviar" method="POST">
+                <input
+                  type="text"
+                  name="nome"
+                  placeholder="Nome completo"
+                  required
+                />
+                <input
+                  type="text"
+                  name="empresa"
+                  placeholder="Empresa"
+                  required
+                />
+                <input type="text" name="cnpj" placeholder="CNPJ" required />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="E-mail"
+                  required
+                />
+                <input
+                  type="text"
+                  name="whatsapp"
+                  placeholder="Whatsapp"
+                  required
+                />
+                <input type="text" name="cargo" placeholder="Cargo" />
+                <input type="url" name="site" placeholder="Site" />
+                <button type="submit">Enviar e falar com um Consultor!</button>
+              </form>
+            </div>
+          </div>
         </section>
       </div>
 

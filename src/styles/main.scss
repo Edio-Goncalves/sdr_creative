@@ -95,10 +95,9 @@
       max-width: 1200px;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
       min-height: 300px;
       gap: 40px;
-
       main {
         max-width: 50%;
         display: flex;
@@ -132,9 +131,85 @@
           font-weight: 300;
         }
       }
-      .img-form {
-        width: 50%;
-        height: 300px;
+      .hero-form {
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        position: relative;
+        width: 340px;
+
+        .form-wrapper {
+          position: absolute;
+          top: -200px;
+          display: flex;
+          flex-direction: column;
+          .form-header {
+            padding: 30px 30px 20px;
+            border-top-right-radius: 14px;
+            border-top-left-radius: 14px;
+            background: radial-gradient(
+              circle at 100% 0%,
+              #572d99 0%,
+              #a370f7 90%
+            );
+            .form-tittle {
+              > :first-child {
+                color: #ffffff;
+                font-weight: 500;
+                font-size: 1rem;
+                margin-bottom: 10px;
+                text-align: center;
+              }
+              > :last-child {
+                color: #ffffff;
+                font-weight: 300;
+                line-height: 1.4;
+                font-size: 0.8rem;
+              }
+            }
+          }
+          form {
+            padding: 20px 30px 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            background-color: #ffffff;
+            border-bottom-right-radius: 14px;
+            border-bottom-left-radius: 14px;
+            box-shadow: 0 4px 16px rgba(98, 14, 255, 0.219);
+            background: radial-gradient(
+              circle at 90% 70%,
+              rgb(228, 214, 255) 0%,
+              rgb(255, 255, 255) 50%
+            );
+            input {
+              padding: 12px;
+              border: 1px solid #e0e0e0;
+              border-radius: 5px;
+              &::placeholder {
+                font-weight: 200;
+                font-size: 0.8rem;
+                color: rgb(217, 198, 255);
+              }
+              &:focus {
+                border: 1px solid rgb(190, 162, 255);
+                outline: none;
+              }
+            }
+            button {
+              cursor: pointer;
+              padding: 20px;
+              border-radius: 10px;
+              border: none;
+              background-color: #a370f7;
+              color: #ffffff;
+              transition: all 0.3s ease-in-out;
+              &:hover {
+                background-color: #924fffc0;
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -522,6 +597,9 @@
     max-width: 1000px;
     padding-left: 40px;
     padding-right: 40px;
+    &.-termos {
+      margin-bottom: 30px;
+    }
     .call {
       background-color: #a370f7;
       background: #000000;
@@ -689,6 +767,44 @@
           }
         }
       }
+    }
+  }
+
+  /* POLITICAS */
+  .politicas {
+    max-width: 1100px;
+    margin: auto;
+    padding: 50px 20px 50px;
+
+    > :first-child {
+      p {
+        margin-bottom: 10px;
+      }
+
+      > :nth-child(2) {
+        font-style: italic;
+        font-weight: 300;
+      }
+    }
+    div {
+      margin-bottom: 20px;
+      h2 {
+        font-size: 20px;
+      }
+      p {
+        font-size: 14px;
+        margin-bottom: 10px;
+      }
+      ul {
+        li {
+          font-size: 14px;
+          list-style-position: inside;
+          margin-left: 10px;
+        }
+      }
+    }
+    h1 {
+      font-size: 24px;
     }
   }
 }
@@ -931,6 +1047,7 @@
       .main {
         padding: 50px 50px 80px;
         flex-direction: column;
+        gap: 80px;
         main {
           max-width: 100%;
           display: flex;
@@ -949,9 +1066,15 @@
             margin-top: 28px;
           }
         }
-        .img-form {
+        .hero-form {
+          height: 100%;
           width: 100%;
-          height: 300px;
+          max-width: 480px;
+
+          .form-wrapper {
+            position: relative;
+            top: 0px;
+          }
         }
       }
     }
@@ -1141,7 +1264,8 @@
       );
 
       .main {
-        padding: 50px 50px 80px;
+        padding: 50px 30px 80px;
+        gap: 40px;
         main {
           gap: 0px;
           > :first-child {
@@ -1165,9 +1289,34 @@
             font-size: 0.8rem;
           }
         }
-        .img-form {
-          width: 100%;
-          height: 300px;
+        .hero-form {
+          .form-wrapper {
+            .form-header {
+              padding: 20px 20px 15px;
+              text-align: center;
+              .form-tittle {
+                > :first-child {
+                  font-size: 0.9rem;
+                }
+                > :last-child {
+                  font-size: 0.75rem;
+                }
+              }
+            }
+            form {
+              gap: 10px;
+              input {
+                padding: 10px;
+                &::placeholder {
+                  font-size: 0.75rem;
+                }
+              }
+              button {
+                font-size: 0.775rem;
+                padding: 14px;
+              }
+            }
+          }
         }
       }
     }
@@ -1366,6 +1515,25 @@
             text-align: center;
           }
         }
+      }
+    }
+    .politicas {
+      padding: 30px 20px 30px;
+      div {
+        h2 {
+          font-size: 16px;
+        }
+        p {
+          font-size: 12px;
+        }
+        ul {
+          li {
+            font-size: 12px;
+          }
+        }
+      }
+      h1 {
+        font-size: 20px;
       }
     }
   }
