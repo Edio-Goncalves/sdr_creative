@@ -140,7 +140,7 @@
 
         .form-wrapper {
           position: absolute;
-          top: -200px;
+          top: -230px;
           display: flex;
           flex-direction: column;
           .form-header {
@@ -149,8 +149,8 @@
             border-top-left-radius: 14px;
             background: radial-gradient(
               circle at 100% 0%,
-              #572d99 0%,
-              #a370f7 90%
+              #340c75 0%,
+              #643aa8 90%
             );
             .form-tittle {
               > :first-child {
@@ -189,7 +189,7 @@
               &::placeholder {
                 font-weight: 200;
                 font-size: 0.8rem;
-                color: rgb(217, 198, 255);
+                color: rgb(141, 124, 175);
               }
               &:focus {
                 border: 1px solid rgb(190, 162, 255);
@@ -201,7 +201,7 @@
               padding: 20px;
               border-radius: 10px;
               border: none;
-              background-color: #a370f7;
+              background-color: #8c4ff0;
               color: #ffffff;
               transition: all 0.3s ease-in-out;
               &:hover {
@@ -210,6 +210,187 @@
             }
           }
         }
+      }
+    }
+  }
+
+  /* COMO FUNCIONA */
+  .como-funciona {
+    width: 100%;
+    max-width: 1200px;
+    padding: 140px 50px 100px;
+    .wrapper-content-funciona {
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+      .funciona-cnt {
+        .tag-funciona {
+          text-transform: uppercase;
+          font-size: 0.9rem;
+          text-align: center;
+          color: rgb(111, 63, 207);
+        }
+        gap: 0px;
+        display: flex;
+        flex-direction: column;
+        h2 {
+          font-size: 3rem;
+          font-weight: 400;
+          text-align: center;
+
+          > span {
+            color: rgb(111, 63, 207);
+            font-style: italic;
+          }
+        }
+        .intro-funciona {
+          text-align: center;
+          max-width: 800px;
+          margin: 0 auto;
+          line-height: 1.4;
+          font-size: 1rem;
+          font-weight: 300;
+        }
+      }
+    }
+
+    .wrapper-boxes-funciona {
+      display: flex;
+      gap: 10x;
+      width: 100%;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      .box-funciona {
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        border-radius: 0.6rem;
+        box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+          rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+        transition: all 0.2s ease-in-out;
+        .icon-funciona {
+          width: 60px;
+          height: 60px;
+          font-size: 50px;
+          margin-bottom: 40px;
+        }
+        h3 {
+          font-size: 1.2rem;
+          margin-bottom: 10px;
+        }
+        p {
+          font-size: 0.8rem;
+        }
+      }
+      > :hover {
+        cursor: context-menu;
+        background-color: rgb(111, 63, 207);
+        h3,
+        p {
+          color: white;
+        }
+        .icon-funciona {
+          color: white;
+        }
+      }
+    }
+
+    .cta-funciona {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto 40px;
+      line-height: 1.4;
+      font-size: 1rem;
+      font-weight: 300;
+      .btn-funciona {
+        cursor: pointer;
+        display: inline-block;
+        margin-top: 50px;
+        padding: 18px 20px;
+        text-decoration: none;
+        background: radial-gradient(circle at 100% 0%, #340c75 0%, #643aa8 90%);
+        border-radius: 8px;
+        color: #fdfdfd;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+          background: radial-gradient(
+            circle at 100% 0%,
+            #340c75bb 0%,
+            #643aa8b7 90%
+          );
+        }
+      }
+    }
+  }
+
+  /* CANAIS */
+  .canal {
+    background-color: #f5f5f5;
+    padding: 40px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .tag-canal {
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      text-align: center;
+      color: rgb(111, 63, 207);
+    }
+    .wrapper-content-canal {
+      width: 100%;
+      max-width: 1200px;
+      padding-left: 30px;
+      padding-right: 30px;
+      display: flex;
+      align-items: center;
+      gap: 60px;
+      justify-content: space-between;
+      .wrapper-content {
+        max-width: 50%;
+        h2 {
+          font-size: 3rem;
+          font-weight: 400;
+          line-height: 1.2;
+          > span {
+            color: rgb(111, 63, 207);
+            font-style: italic;
+          }
+        }
+        .wrapper-content-box {
+          margin-top: 40px;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          .wrapper-content-box-card {
+            > :first-child {
+              font-size: 1.4rem;
+              font-weight: 600;
+              display: flex;
+              align-items: center;
+              i {
+                margin-right: 10px;
+                font-size: 14px;
+                background-color: rgb(111, 63, 207);
+                color: white;
+                padding: 5px;
+                border-radius: 4px;
+              }
+            }
+            p {
+              font-weight: 300;
+            }
+          }
+        }
+      }
+      .img-canal {
+        width: 480px;
+        height: 450px;
+        background-image: url(/src/img/channels.png);
+        background-size: 520px;
+        background-repeat: no-repeat;
       }
     }
   }
@@ -403,77 +584,6 @@
     }
   }
 
-  /* CANAIS */
-  .canal {
-    background-color: #f5f5f5;
-    padding: 40px 0px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    .tag-canal {
-      text-transform: uppercase;
-      font-size: 0.9rem;
-      text-align: center;
-      color: rgb(111, 63, 207);
-    }
-    .wrapper-content-canal {
-      width: 100%;
-      max-width: 1200px;
-      padding-left: 30px;
-      padding-right: 30px;
-      display: flex;
-      align-items: center;
-      gap: 60px;
-      justify-content: space-between;
-      .wrapper-content {
-        max-width: 50%;
-        h2 {
-          font-size: 3rem;
-          font-weight: 400;
-          line-height: 1.2;
-          > span {
-            color: rgb(111, 63, 207);
-            font-style: italic;
-          }
-        }
-        .wrapper-content-box {
-          margin-top: 40px;
-          display: flex;
-          flex-direction: column;
-          gap: 20px;
-          .wrapper-content-box-card {
-            > :first-child {
-              font-size: 1.4rem;
-              font-weight: 600;
-              display: flex;
-              align-items: center;
-              i {
-                margin-right: 10px;
-                font-size: 14px;
-                background-color: rgb(111, 63, 207);
-                color: white;
-                padding: 5px;
-                border-radius: 4px;
-              }
-            }
-            p {
-              font-weight: 300;
-            }
-          }
-        }
-      }
-      .img-canal {
-        width: 480px;
-        height: 450px;
-        background-image: url(/src/img/channels.png);
-        background-size: 520px;
-        background-repeat: no-repeat;
-      }
-    }
-  }
-
   /* COMPARACAO */
   .comparacao {
     background-color: #f5f5f5;
@@ -636,7 +746,7 @@
         transition: all 0.2s ease-in-out;
         color: #525252;
         &:hover {
-          transform: scale(1.06);
+          transform: scale(1.02);
           background-color: #ffffff;
         }
       }
@@ -811,6 +921,26 @@
 /* MEDIAS */
 @media (max-width: 1160px) {
   .wrapper {
+    .como-funciona {
+      display: flex;
+      flex-direction: column;
+      .wrapper-content-funciona {
+        max-width: 600px;
+        margin: auto;
+        align-items: center;
+        .funciona-cnt {
+          h2 {
+            line-height: 1.2;
+            margin-bottom: 10px;
+          }
+        }
+        .wrapper-boxes-funciona {
+          flex-wrap: wrap;
+          gap: 30px;
+        }
+      }
+    }
+
     .beneficios {
       display: flex;
       flex-direction: column;
@@ -818,6 +948,9 @@
         max-width: 600px;
         margin: auto;
         align-items: center;
+        h2 {
+          line-height: 1.2;
+        }
         .wrapper-boxes-beneficio {
           flex-wrap: wrap;
           gap: 30px;
@@ -1219,6 +1352,15 @@
 
 @media (max-width: 650px) {
   .wrapper {
+    .como-funciona {
+      .wrapper-content-funciona {
+        .wrapper-boxes-funciona {
+          max-width: 300px;
+          justify-content: center;
+        }
+      }
+    }
+
     .beneficios {
       .wrapper-content-beneficio {
         .wrapper-boxes-beneficio {
@@ -1315,6 +1457,30 @@
                 font-size: 0.775rem;
                 padding: 14px;
               }
+            }
+          }
+        }
+      }
+    }
+
+    .como-funciona {
+      padding: 60px 50px;
+      .tag-beneficios {
+        font-size: 0.8rem;
+      }
+      .wrapper-content-funciona {
+        gap: 40px;
+        h2 {
+          font-size: 2.2rem;
+          line-height: 1.2;
+        }
+        .wrapper-boxes-funciona {
+          max-width: 300px;
+          justify-content: center;
+          .box-funciona {
+            padding: 30px;
+            .icon-funciona {
+              margin-bottom: 20px;
             }
           }
         }
